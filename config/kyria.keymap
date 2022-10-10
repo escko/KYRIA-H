@@ -91,7 +91,7 @@
 			bindings = <
 	&trans    &kp W &kp Z &kp E &kp C &kp S                                               &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&trans    &mo LOWER &kp Q &kp LG(E) &kp F &kp D                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&trans    &trans &trans &kp Y &kp N3 &kp LSHFT &kp LALT &kp LALT                &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	&trans    &trans &trans &kp Y &kp N3 &kp LS(LGUI) &kp LSHFT &kp LALT                &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
 	              &trans &kp B &kp LGUI &kp SPACE &kp SPACE                     &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
