@@ -90,9 +90,9 @@
 //                     | N0|  S | LSHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
 	&trans    &kp W &kp Z &kp E &kp N3 &kp F                                               &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&trans    &kp R &kp X &kp Q &kp S &kp A                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&trans    &kp SLASH &kp T &kp Y &kp D &kp F1 &kp LSHFT &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	              &kp P &mo LOWER &kp GRAVE &kp LGUI &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+	&trans    &kp F1 &kp X &kp Q &kp S &kp A                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&trans    &kp SLASH &kp T &kp Y &kp D &kp GRAVE &kp LSHFT &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	              &kp P &mo LOWER &kp V &kp LGUI &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp N1 N2>;
