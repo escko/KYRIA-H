@@ -90,7 +90,7 @@
 //                     | N0|  S | LSHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
 	&trans    &kp W &kp Z &kp E &kp F1 &kp S                                               &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&trans    &kp F &kp X &kp R &kp D &kp Q                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&trans    &kp F &kp X &kp Q &kp D &kp N3                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&trans    &kp SLASH &kp U &kp Y &kp A &kp N0 &kp LSHFT &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
 	              &kp P &mo LOWER &kp GRAVE &kp LGUI &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
