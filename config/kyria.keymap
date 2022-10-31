@@ -12,6 +12,9 @@
 
 #define DEFAULT 0
 #define LOWER   1
+#define RAISE   2
+#define BLUE    3
+
 
 &left_encoder { resolution = <2>; };
 // &right_encoder { resolution = <1>; };
@@ -90,24 +93,54 @@
 //                     | N0|  S | LSHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
 	&trans    &kp W &kp Z &kp E &kp F1 &kp N3                                              &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&trans    &kp R &kp X &kp D &kp S &kp F                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&trans    &kp SLASH &kp U &kp Y &kp A &kp N0 &kp LSHFT &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	              &kp P &mo LOWER &kp Q &kp LGUI &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+	&trans    &kp F &kp A &kp D &kp S &kp N0                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&trans    &kp SLASH &kp COMMA &kp V &kp T &kp BACKSLASH &kp LSHFT &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	              &kp P &mo RAISE &mo LOWER &kp LGUI &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp N1 N2>;
 		};
-        lower_layer {
+		lower_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  M | R    | LGUI |  E |  R |  T |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
 // |  L | X    |  W   | N2 | N3 |  H |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
 // | MO1| EPTOG|  Q   |  Y |  A |  V | C | D |               | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | N0|  S | LSHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&trans    &kp N &kp LG(X) &kp LG(C) &kp LG(V) &trans                                                             &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&trans    &kp M &trans &trans &trans &trans                                                                      &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&trans    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &rgb_ug RGB_TOG &rgb_ug RGB_HUI &rgb_ug RGB_HUD                &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	              &rgb_ug RGB_BRD &trans &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_SAD                                                         &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+	&trans       &kp Q &kp X &kp DEL &kp Y &kp U                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&trans       &KP R &kp C &kp I &kp O &kp T                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&trans       &trans &trans &kp J &kp K &mo BLUE &kp N &kp COMMA                &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	              &kp LC(UP_ARROW) &kp C_PLAY_PAUSE &trans &kp M &kp PERIOD                                      &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+			>;
+
+			sensor-bindings = <&inc_dec_kp LA(LBKT) LA(RBKT)>;
+		};
+		raise_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  M | R    | LGUI |  E |  R |  T |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+// |  L | X    |  W   | N2 | N3 |  H |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+// | MO1| EPTOG|  Q   |  Y |  A |  V | C | D |               | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
+//                     | N0|  S | LSHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+			bindings = <
+	&trans      &trans &kp LG(X) &kp LG(C) &kp LG(V) &trans                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&trans       &trans &trans &trans &trans &trans                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&trans       &trans &trans &trans &trans &trans &trans &trans                &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	              &trans &trans &trans &trans &trans                                      &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+			>;
+
+			sensor-bindings = <&inc_dec_kp LG(LBKT) LG(RBKT)>;
+		};
+        blue_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// |  M | R    | LGUI |  E |  R |  T |                                          |  Y   |  U    |  I    |  O   |   P   |   \  |
+// |  L | X    |  W   | N2 | N3 |  H |                                          |  H   |  J    |  K    |  L   |   ;   |   '  |
+// | MO1| EPTOG|  Q   |  Y |  A |  V | C | D |               | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
+//                     | N0|  S | LSHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
+			bindings = <
+	&trans    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &rgb_ug RGB_HUI &rgb_ug RGB_HUD                                                             &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&trans    &trans &trans &trans &rgb_ug RGB_SAI &rgb_ug RGB_SAD                                                                      &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&trans    &trans &trans &trans &trans &trans &rgb_ug RGB_TOG &bt BT_CLR                &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	              &trans &trans &trans &rgb_ug RGB_BRD &rgb_ug RGB_BRI                                                         &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
