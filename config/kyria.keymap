@@ -16,8 +16,9 @@
 #define BLUE    3
 
 
-&left_encoder { resolution = <2>; };
-// &right_encoder { resolution = <1>; };
+&left_encoder { status = "okay"; };
+&right_encoder { status = "okay"; };
+&bottom_encoder { status = "okay"; resolution = <2>; };
 
 &mt {
     tapping-term-ms = <129>;
