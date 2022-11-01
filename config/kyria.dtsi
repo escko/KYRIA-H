@@ -54,7 +54,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9) 
 };
 
 
-left_encoder: encoder_left {
+&left_encoder: encoder_left {
 		compatible = "alps,ec11";
 		label = "LEFT_ENCODER";
 		a-gpios = <&pro_micro_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
@@ -62,7 +62,7 @@ left_encoder: encoder_left {
 		resolution = <2>;
     	};
 
-left1_encoder: encoder_left1 {
+&left1_encoder: encoder_left1 {
 		compatible = "alps,ec11";
 		label = "LEFT1_ENCODER";
 		a-gpios = <&pro_micro_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
