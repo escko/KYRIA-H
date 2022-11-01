@@ -1,23 +1,14 @@
-
-if SHIELD_KYRIA_LEFT
+if SHIELD_KYRIA_LEFT || SHIELD_KYRIA_REV2_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "Kyria"
 
-endif
-
-
-if SHIELD_KYRIA_RIGHT
-
-config ZMK_KEYBOARD_NAME
-	default "Kyria Right"
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
 
 endif
 
-
-
-
-if SHIELD_KYRIA_LEFT || SHIELD_KYRIA_RIGHT
+if SHIELD_KYRIA
 
 config ZMK_SPLIT
 	default y
@@ -36,12 +27,6 @@ config SSD1306_REVERSE_MODE
 endif # ZMK_DISPLAY
 
 if LVGL
-
-config LVGL_HOR_RES
-	default 128
-
-config LVGL_VER_RES
-	default 32
 
 config LVGL_VDB_SIZE
 	default 64

@@ -29,14 +29,14 @@
 
 	right_encoder: encoder_right {
 		compatible = "alps,ec11";
-		label = "TOP_ENCODER";
+		label = "RIGHT_ENCODER";
 		resolution = <4>;
 		status = "disabled";
 	};
 
 	sensors {
 		compatible = "zmk,keymap-sensors";
-		sensors = <&left_encoder &top_encoder>;
+		sensors = <&left_encoder &right_encoder>;
 	};
 
 	// TODO: RGB node(s)
