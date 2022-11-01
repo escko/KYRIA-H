@@ -27,9 +27,9 @@
 		status = "disabled";
 	};
 
-	top_encoder: encoder_right {
+	right_encoder: encoder_right {
 		compatible = "alps,ec11";
-		label = "TOP_ENCODER";
+		label = "RIGHT_ENCODER";
 		resolution = <4>;
 		status = "disabled";
 	};
