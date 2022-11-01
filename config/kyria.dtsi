@@ -62,7 +62,7 @@ left_encoder: encoder_left {
         resolution = <4>;
     };
 
-top_encoder: encoder_left {
+top_encoder: encoder_top {
         compatible = "alps,ec11";
         label = "TOP_ENCODER";
         a-gpios = <PIN_8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
