@@ -98,7 +98,7 @@
 	              &kp P &mo RAISE &mo LOWER &kp LGUI &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
-			sensor-bindings = <&inc_dec_kp N1 N2>;
+			sensor-bindings = <&inc_dec_kp N1 N2 &inc_dec_kp LBKT RBKT>;
 		};
 		lower_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
