@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "kyria_common.dtsi"
 
 / {
 	chosen {

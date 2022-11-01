@@ -28,7 +28,7 @@ endif # ZMK_DISPLAY
 
 if LVGL
 
-config LVGL_VDB_SIZE
+config LVGL_VDB_SIZEd
 	default 64
 
 config LVGL_DPI
