@@ -15,6 +15,29 @@
 #define RAISE   2
 #define BLUE    3
 
+left_encoder: encoder_left {
+		compatible = "alps,ec11";
+		label = "LEFT_ENCODER";
+		a-gpios = <&pro_micro_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&pro_micro_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		resolution = <2>;
+    	};
+
+top_encoder: encoder_left1 {
+		compatible = "alps,ec11";
+		label = "TOP_ENCODER";
+		a-gpios = <&pro_micro_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&pro_micro_d 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		resolution = <2>;
+    	};
+
+    	sensors {
+        	    compatible = "zmk,keymap-sensors";
+        	    sensors = <&left_encoder &top_encoder>;
+   	};
+&left_encoder { status = "okay"; };
+&top_encoder { status = "okay"; };
+
 
 &left_encoder { resolution = <2>; };
 // &right_encoder { resolution = <1>; };
