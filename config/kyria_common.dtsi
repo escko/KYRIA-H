@@ -27,16 +27,16 @@
 		status = "disabled";
 	};
 
-	top_encoder: encoder_right {
+	top_encoder: encoder_top {
 		compatible = "alps,ec11";
-		label = "RIGHT_ENCODER";
+		label = "TOP_ENCODER";
 		resolution = <4>;
 		status = "disabled";
 	};
 
 	sensors {
 		compatible = "zmk,keymap-sensors";
-		sensors = <&left_encoder &right_encoder>;
+		sensors = <&left_encoder &top_encoder>;
 	};
 
 	// TODO: RGB node(s)
