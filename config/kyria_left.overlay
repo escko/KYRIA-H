@@ -18,8 +18,3 @@
 		, <&pro_micro 10 GPIO_ACTIVE_HIGH>
 		;
 };
-
-sensors {
-    compatible = "zmk,keymap-sensors";
-    sensors = <&left_encoder &right_encoder>;
-};
