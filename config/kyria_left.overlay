@@ -20,9 +20,9 @@
 };
 
 &left_encoder {
-	status = "okay";
+    status = "okay";
 };
 
-&right_encoder {
-	status = "okay";
+&left1_encoder {
+    status = "okay";
 };
