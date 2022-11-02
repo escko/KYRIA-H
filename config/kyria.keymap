@@ -120,7 +120,7 @@ top_encoder: encoder_left1 {
 	&trans    &kp W &kp Z &kp E &kp F1 &kp N3                                              &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&trans    &kp F &kp A &kp D &kp S &kp N0                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&trans    &kp SLASH &kp COMMA &kp V &kp T &kp BACKSLASH &kp LSHFT &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	              &kp P &mo RAISE &mo LOWER &kp LGUI &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+	            &kp P &mo RAISE &mo LOWER &kp LGUI &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp N1 N2 &inc_dec_kp DOWN UP>;
