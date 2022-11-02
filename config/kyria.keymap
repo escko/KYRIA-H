@@ -23,6 +23,7 @@ left_encoder: encoder_left {
 		a-gpios = <&pro_micro_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		resolution = <2>;
+		status = "okay";
     	};
 
 top_encoder: encoder_left1 {
@@ -31,16 +32,13 @@ top_encoder: encoder_left1 {
 		a-gpios = <&pro_micro_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro_d 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		resolution = <2>;
+		status = "okay";
     	};
 
     	sensors {
         	    compatible = "zmk,keymap-sensors";
         	    sensors = <&left_encoder &top_encoder>;
    	};
-
-&left_encoder { status = "okay"; };
-&top_encoder { status = "okay"; };
-
 };
 
 
