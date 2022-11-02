@@ -28,8 +28,8 @@ left_encoder: encoder_left {
 top_encoder: encoder_left1 {
 		compatible = "alps,ec11";
 		label = "TOP_ENCODER";
-		a-gpios = <&pro_micro_d 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&pro_micro_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		a-gpios = <&pro_micro_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&pro_micro_d 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		resolution = <2>;
 		status = "okay";
     	};
@@ -123,7 +123,7 @@ top_encoder: encoder_left1 {
 	              &kp P &mo RAISE &mo LOWER &kp LGUI &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
-			sensor-bindings = <&inc_dec_kp N1 N2 &inc_dec_kp LBKT RBKT>;
+			sensor-bindings = <&inc_dec_kp N1 N2 &inc_dec_kp DOWN UP>;
 		};
 		lower_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
@@ -138,7 +138,7 @@ top_encoder: encoder_left1 {
 	             &kp LC(UP_ARROW) &kp C_PLAY_PAUSE &trans &kp M &kp PERIOD                                      &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
-			sensor-bindings = <&inc_dec_kp LA(LBKT) LA(RBKT)>;
+			sensor-bindings = <&inc_dec_kp LA(N1) LA(N2) &inc_dec_kp LEFT RIGHT>;
 		};
 		raise_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
@@ -153,7 +153,7 @@ top_encoder: encoder_left1 {
 	            &trans &trans &trans &trans &trans                                      &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
-			sensor-bindings = <&inc_dec_kp LG(LBKT) LG(RBKT)>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
         blue_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
