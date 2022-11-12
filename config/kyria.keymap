@@ -117,8 +117,8 @@ top_encoder: encoder_left1 {
 //                     | N0|  S | LSHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
 	&trans &trans &kp B &kp E &kp C &kp N0                                              &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&trans &trans &kp F &kp V &kp S &kp T                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&trans &trans &kp A &kp H &kp D &kp SLASH &kp LGUI &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	&trans &trans &kp F &kp V &kp S &kp A                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&trans &trans &kp R &kp T &kp D &kp SLASH &kp LGUI &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
 	        &kp BACKSLASH &mo LOWER &kp Q &kp LSHFT &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
