@@ -53,7 +53,7 @@ top_encoder: encoder_left1 {
 
 / {
     behaviors {
-        td0: tap_dance_0 {
+        td0: tap_dance_B {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_B";
             #binding-cells = <0>;
@@ -67,7 +67,7 @@ top_encoder: encoder_left1 {
 
         default_layer {
             bindings = <
-                &td0
+                &tap_dance_B
             >;
         };
     };
