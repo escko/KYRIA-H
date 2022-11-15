@@ -53,13 +53,20 @@ top_encoder: encoder_left1 {
 
 / {
     behaviors {
-         B_X: tap_dance_0 {
+         B_Z: tap_dance_0 {
       compatible = "zmk,behavior-tap-dance";
-      label = "B_X";
+      label = "B_Z";
       #binding-cells = <0>;
-      tapping-term-ms = <200>;
+      tapping-term-ms = <400>;
       bindings = <&kp B>, <&kp X>;
         };
+		   C_F: tap_dance_1 {
+      compatible = "zmk,behavior-tap-dance";
+      label = "C_F";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&kp C>, <&kp F>;
+       };
     };
 
     keymap {
@@ -116,8 +123,8 @@ top_encoder: encoder_left1 {
 // | MO1| EPTOG|  Q   |  Y |  A |  V | C | D |               | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | N0|  S | LSHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&trans &trans &B_X &kp E &kp C &kp N0                                              &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&trans &trans &kp Q &kp V &kp S &kp F                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&trans &trans &B_Z &kp E &C_F &kp N0                                              &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&trans &trans &kp X &kp V &kp S &kp F                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&trans &trans &kp R &kp T &kp D &kp P &kp LGUI &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
 	        &kp BACKSLASH &kp L &mo LOWER &kp LSHFT &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
@@ -131,7 +138,7 @@ top_encoder: encoder_left1 {
 // | MO1| EPTOG|  Q   |  Y |  A |  V | C | D |               | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | N0|  S | L SHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&trans &trans &kp X &kp Y &kp A &kp SINGLE_QUOTE                                                 &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&trans &trans &kp Z &kp Y &kp A &kp SINGLE_QUOTE                                                 &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&trans &trans &kp I &kp O &kp W &kp BACKSPACE                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
     &trans &trans &kp J &kp K &kp SLASH &mo BLUE &trans &trans                &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
 	        &kp COMMA &kp PERIOD &trans &kp C_PLAY_PAUSE &kp LC(UP_ARROW)                                       &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
