@@ -89,21 +89,21 @@ top_encoder: encoder_left1 {
       compatible = "zmk,behavior-tap-dance";
       label = "B_Z";
       #binding-cells = <0>;
-      tapping-term-ms = <150>;
+      tapping-term-ms = <200>;
       bindings = <&kp B>, <&kp X>;
         };
 		 C_F: tap_dance_1 {
       compatible = "zmk,behavior-tap-dance";
       label = "C_F";
       #binding-cells = <0>;
-      tapping-term-ms = <150>;
+      tapping-term-ms = <200>;
       bindings = <&kp C>, <&kp F>;
        };
-	   	 S_D: tap_dance_1 {
+	   	 S_D: tap_dance_2 {
       compatible = "zmk,behavior-tap-dance";
       label = "S_D";
       #binding-cells = <0>;
-      tapping-term-ms = <150>;
+      tapping-term-ms = <200>;
       bindings = <&kp S>, <&kp D>;
        };
     };
