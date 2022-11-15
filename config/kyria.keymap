@@ -51,6 +51,27 @@ top_encoder: encoder_left1 {
     tapping-term-ms = <129>;
 };
 
+/ {
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &td0
+            >;
+        };
+    };
+};
 &spi1 {
 	compatible = "nordic,nrf-spim";
 	status = "okay";
@@ -83,28 +104,6 @@ top_encoder: encoder_left1 {
 	};
 };
 
-/ {
-     behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "SPACE_RET";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp SPACE>, <&kp RET>;
-        };
-    };
-
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            bindings = <
-                &td0
-            >;
-        };
-    };
-};
-
 
 / {
 	keymap {
@@ -117,7 +116,7 @@ top_encoder: encoder_left1 {
 // | MO1| EPTOG|  Q   |  Y |  A |  V | C | D |               | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | N0|  S | LSHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&trans &trans &SPACE_RET &kp E &kp C &kp N0                                              &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&trans &trans &TAP_DANCE_0 &kp E &kp C &kp N0                                              &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&trans &trans &kp Q &kp V &kp S &kp F                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 	&trans &trans &kp R &kp T &kp D &kp P &kp LGUI &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
 	        &kp BACKSLASH &kp L &mo LOWER &kp LSHFT &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
