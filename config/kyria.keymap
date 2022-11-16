@@ -53,7 +53,7 @@ top_encoder: encoder_left1 {
 
 / {
     behaviors {
-         B_X: tap_dance_0 {
+         C_F: tap_dance_0 {
       compatible = "zmk,behavior-tap-dance";
       label = "C_F";
       #binding-cells = <0>;
