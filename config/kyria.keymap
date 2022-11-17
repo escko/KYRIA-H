@@ -29,7 +29,7 @@ top_encoder: encoder_left1 {
 		label = "TOP_ENCODER";
 		a-gpios = <&pro_micro_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <2>;
+		resolution = <3>;
 		status = "okay";
     	};
 
