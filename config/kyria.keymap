@@ -117,9 +117,9 @@ top_encoder: encoder_left1 {
 //                     | N0|  S | LSHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
 	&trans &trans &kp B &kp E &C_F &kp N0                                              &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&trans &trans &kp X &kp V &kp S &kp A                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&trans &trans &kp R &kp T &kp D &kp P &kp LGUI &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	        &kp BACKSLASH &kp Q &mo LOWER &kp LSHFT &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+	&trans &trans &kp Z &kp V &kp S &kp X                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&trans &trans &kp A &kp T &kp D &kp P &kp LGUI &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	        &kp SLASH &kp Q &mo LOWER &kp LSHFT &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp LBKT RBKT &inc_dec_kp DOWN UP>;
