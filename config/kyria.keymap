@@ -116,13 +116,13 @@ top_encoder: encoder_left1 {
 // | MO1| EPTOG|  Q   |  Y |  A |  V | C | D |               | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | N0|  S | LSHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&trans &trans &kp B &kp E &kp C &kp N0                                              &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&trans &trans &kp Z &kp V &kp S &kp A                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&trans &trans &kp Q &kp T &kp D &kp P &kp LGUI &kp LALT               &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	        &mt LALT L &kp R &lt LOWER X &kp LSHFT &kp SPACE                   &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+	&trans &trans &kp E &kp W &mt LSHFT Q &kp R                                              &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&trans &trans &mt LSHFT A &mt S T &kp D &kp F                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+	&trans &trans &kp Z &kp X &kp C &kp V &kp LGUI &kp LC(UP_ARROW)                                &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	        &kp GRAVE &mo LOWER &mt LALT X &kp SPACE &kp C_PLAY_PAUSE                               &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
-			sensor-bindings = <&inc_dec_kp LBKT RBKT &inc_dec_kp DOWN UP>;
+			sensor-bindings = <&inc_dec_kp N2 N3 &inc_dec_kp N1 N4>;
 		};
 		lower_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
@@ -131,10 +131,10 @@ top_encoder: encoder_left1 {
 // | MO1| EPTOG|  Q   |  Y |  A |  V | C | D |               | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | CTRL |
 //                     | N0|  S | L SHIFT |LALT| F |    |   RET   |  SPACE  | TAB  | BSPC  | R-ALT |
 			bindings = <
-	&trans &trans &kp H &kp Y &kp F &mo BLUE                                                 &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&trans &trans &kp I &kp O &kp W &kp BACKSPACE                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-    &trans &trans &kp J &kp K &kp G &kp SLASH &kp COMMA  &kp PERIOD                 &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-	        &kp LC(UP_ARROW) &kp C_PLAY_PAUSE &trans &kp N &kp M                                         &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
+	&trans &trans &kp I &kp O &kp P &mo BLUE                                                 &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
+	&trans &trans &kp J &kp K &kp L &kp BACKSPACE                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+    &trans &trans &kp B &kp N &kp M &kp SLASH &kp SEMICOLON &kp SINGLE_QUOTE                 &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+	        &kp LEFT &trans &kp RIGHT &kp COMMA &kp PERIOD                                        &kp RET  &kp SPACE  &kp TAB &kp BSPC &kp RALT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
